@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 2.8.3)
 
-project(A01_ExoMy.SLDASM)
+project(ExoMy_Model)
 
 find_package(catkin REQUIRED)
 
