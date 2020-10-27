@@ -147,7 +147,7 @@
     type="continuous">
     <origin
       xyz="0.10378 -0.015418 -0.080775"
-      rpy="1.5708 -1.5708 0" />
+      rpy="0 -1.5708 -1.5708" />
     <parent
       link="MRB_link" />
     <child
@@ -258,7 +258,7 @@
     type="continuous">
     <origin
       xyz="-0.103779999964964 -0.0154182000000004 -0.0807754997113281"
-      rpy="1.5707963267949 -1.5707963267949 0" />
+      rpy="0 -1.5708 -1.5708" />
     <parent
       link="MRB_link" />
     <child
@@ -322,7 +322,7 @@
     <child
       link="DRV_RR_link" />
     <axis
-      xyz="0 0 1" />
+      xyz="0 0 -1" />
   </joint>
   <link
     name="RFB_link">
