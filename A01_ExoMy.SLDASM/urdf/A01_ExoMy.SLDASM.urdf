@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="A01_ExoMy.SLDASM">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.000166132844511093 0.122611646294032 0.0176476740142159"
+        rpy="0 0 0" />
+      <mass
+        value="0.620154414365186" />
+      <inertia
+        ixx="0.00160398254558214"
+        ixy="5.68835545702948E-06"
+        ixz="5.66100523488649E-06"
+        iyy="0.00216940163447142"
+        iyz="-1.96292973974915E-05"
+        izz="0.00147929509086943" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://A01_ExoMy.SLDASM/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.298039215686275 0.298039215686275 0.298039215686275 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://A01_ExoMy.SLDASM/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="cam_link">
+    <inertial>
+      <origin
+        xyz="-0.00249086473821564 0.000136649009533667 0.000569820673845381"
+        rpy="0 0 0" />
+      <mass
+        value="0.00115745344893835" />
+      <inertia
+        ixx="3.97290092554322E-08"
+        ixy="1.65336504816449E-13"
+        ixz="-3.60412180476238E-11"
+        iyy="2.88827920072805E-08"
+        iyz="-2.52492241683058E-13"
+        izz="6.76913771029694E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://A01_ExoMy.SLDASM/meshes/cam_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://A01_ExoMy.SLDASM/meshes/cam_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="cam_joint"
+    type="fixed">
+    <origin
+      xyz="9.4215E-05 -0.063 0.27244"
+      rpy="1.5708 -1.5708 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="cam_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="MRB_link">
+    <inertial>
+      <origin
+        xyz="4.75495428451005E-06 0.00517244564382657 0.0532036918677615"
+        rpy="0 0 0" />
+      <mass
+        value="0.108378303008227" />
+      <inertia
+        ixx="4.87361081191787E-05"
+        ixy="-1.48702235400227E-09"
+        ixz="1.5114207716519E-08"
+        iyy="0.000292228221202496"
+        iyz="2.65262441635302E-07"
+        izz="0.000257396094560959" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://A01_ExoMy.SLDASM/meshes/MRB_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.298039215686275 0.298039215686275 0.298039215686275 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://A01_ExoMy.SLDASM/meshes/MRB_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="MRB_joint"
+    type="continuous">
+    <origin
+      xyz="0 0.082 0.017"
+      rpy="1.5708 0 -3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="MRB_link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="STR_LR_link">
+    <inertial>
+      <origin
+        xyz="-0.116237029100464 -0.0491787009553567 0.02177451371448"
+        rpy="0 0 0" />
+      <mass
+        value="0.0711741624806838" />
+      <inertia
+        ixx="3.36879478479988E-05"
+        ixy="-4.73850731914459E-06"
+        ixz="8.98028473572837E-09"
+        iyy="1.59152321238693E-05"
+        iyz="1.40355471130006E-07"
+        izz="4.10598360484863E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://A01_ExoMy.SLDASM/meshes/STR_LR_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.698039215686274 0.698039215686274 0.698039215686274 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://A01_ExoMy.SLDASM/meshes/STR_LR_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="STR_LR_joint"
+    type="continuous">
+    <origin
+      xyz="0 0 0.058775"
+      rpy="0 0 0" />
+    <parent
+      link="MRB_link" />
+    <child
+      link="STR_LR_link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="STR_RR_link">
+    <inertial>
+      <origin
+        xyz="-0.11616805427964 -0.0492434774044638 -0.0217766439662085"
+        rpy="0 0 0" />
+      <mass
+        value="0.0704590005105739" />
+      <inertia
+        ixx="3.31436979459759E-05"
+        ixy="-4.64776105131268E-06"
+        ixz="-7.92538614535716E-09"
+        iyy="1.57164850586242E-05"
+        iyz="-1.37762287913578E-07"
+        izz="4.04186277976059E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://A01_ExoMy.SLDASM/meshes/STR_RR_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.698039215686274 0.698039215686274 0.698039215686274 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://A01_ExoMy.SLDASM/meshes/STR_RR_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="STR_RR_joint"
+    type="continuous">
+    <origin
+      xyz="0 0 0.058775"
+      rpy="3.1416 0 -3.1416" />
+    <parent
+      link="MRB_link" />
+    <child
+      link="STR_RR_link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+</robot>
