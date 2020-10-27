@@ -1,0 +1,1185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="exomy_description">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.0034422 -0.00059358 0.080023"
+        rpy="0 0 0" />
+      <mass
+        value="0.46179" />
+      <inertia
+        ixx="0.0010394"
+        ixy="5.8492E-06"
+        ixz="-4.2179E-06"
+        iyy="0.0014555"
+        iyz="5.857E-06"
+        izz="0.0018135" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://exomy_description/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.29804 0.29804 0.29804 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://exomy_description/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="MRB_link">
+    <inertial>
+      <origin
+        xyz="-4.75494816077268E-06 0.00517244564419529 -0.053203691874464"
+        rpy="0 0 0" />
+      <mass
+        value="0.108378302988404" />
+      <inertia
+        ixx="4.87361081203044E-05"
+        ixy="1.48702296200827E-09"
+        ixz="1.51142077198508E-08"
+        iyy="0.000292228221201162"
+        iyz="-2.65262441630942E-07"
+        izz="0.000257396094560756" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://exomy_description/meshes/MRB_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.298039215686275 0.298039215686275 0.298039215686275 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://exomy_description/meshes/MRB_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="MRB_joint"
+    type="continuous">
+    <origin
+      xyz="-0.082 0 0.017"
+      rpy="1.5708 0 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="MRB_link" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-1"
+      upper="1"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="STR_LR_link">
+    <inertial>
+      <origin
+        xyz="-0.0124570291004618 0.000225486285520854 -0.0337605009553561"
+        rpy="0 0 0" />
+      <mass
+        value="0.0711741624806848" />
+      <inertia
+        ixx="3.36879478479992E-05"
+        ixy="-8.98028473550272E-09"
+        ixz="-4.73850731914457E-06"
+        iyy="4.10598360484869E-05"
+        iyz="-1.40355471129835E-07"
+        izz="1.59152321238695E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://exomy_description/meshes/STR_LR_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.698039215686274 0.698039215686274 0.698039215686274 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://exomy_description/meshes/STR_LR_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="STR_LR_joint"
+    type="continuous">
+    <origin
+      xyz="0.10378 -0.015418 -0.080775"
+      rpy="1.5708 -1.5708 0" />
+    <parent
+      link="MRB_link" />
+    <child
+      link="STR_LR_link" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="DRV_LR_link">
+    <inertial>
+      <origin
+        xyz="-4.38837843702578E-08 0.000210617627838187 -0.00746718154845782"
+        rpy="0 0 0" />
+      <mass
+        value="0.0569725827075565" />
+      <inertia
+        ixx="5.23057476713962E-05"
+        ixy="1.42808035335289E-11"
+        ixz="-1.2131226060172E-11"
+        iyy="5.21106389985384E-05"
+        iyz="6.30117671071217E-08"
+        izz="8.04986816304342E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://exomy_description/meshes/DRV_LR_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.968627450980392 0.87843137254902 0.6 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://exomy_description/meshes/DRV_LR_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="DRV_LR_joint"
+    type="continuous">
+    <origin
+      xyz="0.0023862 0 -0.057244"
+      rpy="-1.5708 0 1.5708" />
+    <parent
+      link="STR_LR_link" />
+    <child
+      link="DRV_LR_link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="STR_RR_link">
+    <inertial>
+      <origin
+        xyz="-0.0124555119207004 -0.000225533347028836 -0.0337608863888986"
+        rpy="0 0 0" />
+      <mass
+        value="0.0711731050167329" />
+      <inertia
+        ixx="3.36872651590183E-05"
+        ixy="8.0792108135765E-09"
+        ixz="-4.74135535852485E-06"
+        iyy="4.10633342810781E-05"
+        iyz="1.40511475060575E-07"
+        izz="1.59192004795906E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://exomy_description/meshes/STR_RR_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.698039215686274 0.698039215686274 0.698039215686274 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://exomy_description/meshes/STR_RR_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="STR_RR_joint"
+    type="continuous">
+    <origin
+      xyz="-0.10378 -0.015418 -0.080775"
+      rpy="1.5708 -1.5708 0" />
+    <parent
+      link="MRB_link" />
+    <child
+      link="STR_RR_link" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="DRV_RR_link">
+    <inertial>
+      <origin
+        xyz="-4.38837843980133E-08 0.000210617627838181 -0.00746718154845791"
+        rpy="0 0 0" />
+      <mass
+        value="0.0569725827075564" />
+      <inertia
+        ixx="5.23057476713961E-05"
+        ixy="1.42808035678614E-11"
+        ixz="-1.21312261130931E-11"
+        iyy="5.21106389985384E-05"
+        iyz="6.30117671071779E-08"
+        izz="8.04986816304342E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://exomy_description/meshes/DRV_RR_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.968627450980392 0.87843137254902 0.6 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://exomy_description/meshes/DRV_RR_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="DRV_RR_joint"
+    type="continuous">
+    <origin
+      xyz="0.0023862 0 -0.057244"
+      rpy="-1.5708 0 1.5708" />
+    <parent
+      link="STR_RR_link" />
+    <child
+      link="DRV_RR_link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="RFB_link">
+    <inertial>
+      <origin
+        xyz="-8.38457132264214E-05 -0.00628204153226714 -0.0263258310482545"
+        rpy="0 0 0" />
+      <mass
+        value="0.0924731809037187" />
+      <inertia
+        ixx="2.29568915420578E-05"
+        ixy="1.58188457098278E-06"
+        ixz="8.63143998755474E-09"
+        iyy="0.000122728602083747"
+        iyz="4.18180978754209E-07"
+        izz="0.000113483415744406" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://exomy_description/meshes/RFB_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.298039215686275 0.298039215686275 0.298039215686275 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://exomy_description/meshes/RFB_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RFB_joint"
+    type="continuous">
+    <origin
+      xyz="0.055 -0.062 0.017"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="RFB_link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="STR_RF_link">
+    <inertial>
+      <origin
+        xyz="0.000225535399357379 -0.0124555107840924 -0.0337608839210725"
+        rpy="0 0 0" />
+      <mass
+        value="0.0711731123513564" />
+      <inertia
+        ixx="4.10633381534302E-05"
+        ixy="-8.08388203962869E-09"
+        ixz="-1.40514255173095E-07"
+        iyy="3.36872678189233E-05"
+        iyz="-4.74135711620157E-06"
+        izz="1.5919203009283E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://exomy_description/meshes/STR_RF_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.698039215686274 0.698039215686274 0.698039215686274 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://exomy_description/meshes/STR_RF_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="STR_RF_joint"
+    type="continuous">
+    <origin
+      xyz="0.080235 0.014145 -0.041775"
+      rpy="1.5708 0 -0.015893" />
+    <parent
+      link="RFB_link" />
+    <child
+      link="STR_RF_link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="DRV_RF_link">
+    <inertial>
+      <origin
+        xyz="3.39114450861877E-06 0.000210590330311941 0.00746718154845911"
+        rpy="0 0 0" />
+      <mass
+        value="0.0569725827075563" />
+      <inertia
+        ixx="5.23056979378795E-05"
+        ixy="-3.11467028707282E-09"
+        ixz="-1.0135518673735E-09"
+        iyy="5.21106887320552E-05"
+        iyz="-6.30036161957908E-08"
+        izz="8.04986816304344E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://exomy_description/meshes/DRV_RF_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.968627450980392 0.87843137254902 0.6 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://exomy_description/meshes/DRV_RF_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="DRV_RF_joint"
+    type="continuous">
+    <origin
+      xyz="0 0.0023862 -0.057244"
+      rpy="-1.5708 0.015893 0" />
+    <parent
+      link="STR_RF_link" />
+    <child
+      link="DRV_RF_link" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="STR_RM_link">
+    <inertial>
+      <origin
+        xyz="-0.000225484526532056 -0.0124570290148926 -0.0337605008492651"
+        rpy="0 0 0" />
+      <mass
+        value="0.0711741620458433" />
+      <inertia
+        ixx="4.1059835210984E-05"
+        ixy="8.97622797173424E-09"
+        ixz="1.40352149416179E-07"
+        iyy="3.36879468051002E-05"
+        iyz="-4.73850702378181E-06"
+        izz="1.59152316780868E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://exomy_description/meshes/STR_RM_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.698039215686274 0.698039215686274 0.698039215686274 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://exomy_description/meshes/STR_RM_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="STR_RM_joint"
+    type="continuous">
+    <origin
+      xyz="-0.079745 0.016688 -0.041775"
+      rpy="1.5708 0 -0.015893" />
+    <parent
+      link="RFB_link" />
+    <child
+      link="STR_RM_link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="DRV_RM_link">
+    <inertial>
+      <origin
+        xyz="3.39103454103859E-06 0.000210590220343906 0.00746718155160908"
+        rpy="0 0 0" />
+      <mass
+        value="0.0569725827075566" />
+      <inertia
+        ixx="5.23056979379094E-05"
+        ixy="-3.11466934436112E-09"
+        ixz="-1.01396710611316E-09"
+        iyy="5.21106887339111E-05"
+        iyz="-6.30040343072412E-08"
+        izz="8.04986816285489E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://exomy_description/meshes/DRV_RM_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.968627450980392 0.87843137254902 0.6 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://exomy_description/meshes/DRV_RM_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="DRV_RM_joint"
+    type="continuous">
+    <origin
+      xyz="0 0.0023862 -0.057244"
+      rpy="-1.5708 0.015893 0" />
+    <parent
+      link="STR_RM_link" />
+    <child
+      link="DRV_RM_link" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="LFB_link">
+    <inertial>
+      <origin
+        xyz="-1.60029202162099E-05 -0.00628258071143433 0.0263258310443698"
+        rpy="0 0 0" />
+      <mass
+        value="0.0924731806442644" />
+      <inertia
+        ixx="2.29318170765755E-05"
+        ixy="4.3481647864584E-09"
+        ixz="1.98434748239444E-09"
+        iyy="0.000122753677991828"
+        iyz="-4.18265325949264E-07"
+        izz="0.000113483417193971" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://exomy_description/meshes/LFB_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.298039215686275 0.298039215686275 0.298039215686275 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://exomy_description/meshes/LFB_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="LFB_joint"
+    type="continuous">
+    <origin
+      xyz="0.055 0.062 0.017"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="LFB_link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="STR_LF_link">
+    <inertial>
+      <origin
+        xyz="0.000225486285520132 0.0124570291004614 -0.0337605009553564"
+        rpy="0 0 0" />
+      <mass
+        value="0.0711741624806841" />
+      <inertia
+        ixx="4.10598360484866E-05"
+        ixy="8.98028473592779E-09"
+        ixz="-1.40355471130126E-07"
+        iyy="3.3687947847999E-05"
+        iyz="4.73850731914466E-06"
+        izz="1.59152321238694E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://exomy_description/meshes/STR_LF_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.698039215686274 0.698039215686274 0.698039215686274 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://exomy_description/meshes/STR_LF_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="STR_LF_joint"
+    type="continuous">
+    <origin
+      xyz="0.08 0.015418 0.041775"
+      rpy="1.5708 0 0" />
+    <parent
+      link="LFB_link" />
+    <child
+      link="STR_LF_link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="DRV_LF_link">
+    <inertial>
+      <origin
+        xyz="-4.38837841065798E-08 0.00021061762783816 -0.00746718154845799"
+        rpy="0 0 0" />
+      <mass
+        value="0.0569725827075566" />
+      <inertia
+        ixx="5.23057476713962E-05"
+        ixy="1.42808035658317E-11"
+        ixz="-1.2131226880301E-11"
+        iyy="5.21106389985386E-05"
+        iyz="6.30117671071824E-08"
+        izz="8.04986816304343E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://exomy_description/meshes/DRV_LF_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.968627450980392 0.87843137254902 0.6 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://exomy_description/meshes/DRV_LF_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="DRV_LF_joint"
+    type="continuous">
+    <origin
+      xyz="0 -0.0023862 -0.057244"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="STR_LF_link" />
+    <child
+      link="DRV_LF_link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="STR_LM_link">
+    <inertial>
+      <origin
+        xyz="-0.000225533347029273 0.0124555119206989 -0.0337608863888989"
+        rpy="0 0 0" />
+      <mass
+        value="0.0711731050167323" />
+      <inertia
+        ixx="4.10633342810777E-05"
+        ixy="-8.07921081316833E-09"
+        ixz="1.40511475060325E-07"
+        iyy="3.3687265159018E-05"
+        iyz="4.74135535852496E-06"
+        izz="1.59192004795905E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://exomy_description/meshes/STR_LM_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.698039215686274 0.698039215686274 0.698039215686274 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://exomy_description/meshes/STR_LM_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="STR_LM_joint"
+    type="continuous">
+    <origin
+      xyz="-0.08 0.015418 0.041775"
+      rpy="1.5708 0 0" />
+    <parent
+      link="LFB_link" />
+    <child
+      link="STR_LM_link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="DRV_LM_link">
+    <inertial>
+      <origin
+        xyz="-4.37738164535406E-08 0.000210617737805917 -0.00746718154535671"
+        rpy="0 0 0" />
+      <mass
+        value="0.0569725827075566" />
+      <inertia
+        ixx="5.23057476713966E-05"
+        ixy="1.42798757672563E-11"
+        ixz="-1.25464185685153E-11"
+        iyy="5.21106389966827E-05"
+        iyz="6.30113490421525E-08"
+        izz="8.04986816322899E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://exomy_description/meshes/DRV_LM_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.968627450980392 0.87843137254902 0.6 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://exomy_description/meshes/DRV_LM_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="DRV_LM_joint"
+    type="continuous">
+    <origin
+      xyz="0 -0.0023862 -0.057244"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="STR_LM_link" />
+    <child
+      link="DRV_LM_link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="head_link">
+    <inertial>
+      <origin
+        xyz="4.05099172861728E-05 0.0108850586865648 0.0292442059611973"
+        rpy="0 0 0" />
+      <mass
+        value="0.078891512690109" />
+      <inertia
+        ixx="6.70251107353366E-05"
+        ixy="2.39510957060397E-09"
+        ixz="-1.02874991606451E-08"
+        iyy="0.000206696832834382"
+        iyz="-5.15030227255993E-07"
+        izz="0.000246607733219875" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://exomy_description/meshes/head_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.968627450980392 0.87843137254902 0.6 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://exomy_description/meshes/head_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="head_joint"
+    type="fixed">
+    <origin
+      xyz="0.028 0 0.27028"
+      rpy="1.5708 0 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="head_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="eyewhite_link">
+    <inertial>
+      <origin
+        xyz="0.0519999879024582 -3.12462373083244E-05 0.000860409568077425"
+        rpy="0 0 0" />
+      <mass
+        value="0.00447909534854348" />
+      <inertia
+        ixx="4.71996017145732E-07"
+        ixy="3.02527120034814E-13"
+        ixz="-2.59196121277264E-14"
+        iyy="4.71644858227357E-07"
+        iyz="1.94300295539208E-11"
+        izz="9.38560485421757E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://exomy_description/meshes/eyewhite_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://exomy_description/meshes/eyewhite_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="eyewhite_joint"
+    type="fixed">
+    <origin
+      xyz="-0.052 0.023 0.039"
+      rpy="0 0 0" />
+    <parent
+      link="head_link" />
+    <child
+      link="eyewhite_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="pupils_link">
+    <inertial>
+      <origin
+        xyz="-0.0519174840998746 0.00748285919842917 0.000632252497896557"
+        rpy="0 0 0" />
+      <mass
+        value="0.00180370592614686" />
+      <inertia
+        ixx="5.78044279193744E-08"
+        ixy="-3.10353112484797E-10"
+        ixz="2.38207763822241E-10"
+        iyy="5.4642923289686E-08"
+        iyz="2.44973736424874E-09"
+        izz="1.06940274596115E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://exomy_description/meshes/pupils_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.101960784313725 0.101960784313725 0.101960784313725 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://exomy_description/meshes/pupils_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="pupils_joint"
+    type="fixed">
+    <origin
+      xyz="0.104605381251432 -0.00445909335408173 0.002"
+      rpy="0 0 0.134938294798573" />
+    <parent
+      link="eyewhite_link" />
+    <child
+      link="pupils_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="cam_link">
+    <inertial>
+      <origin
+        xyz="-0.00249086473821702 0.000136649009533494 0.00056982067384502"
+        rpy="0 0 0" />
+      <mass
+        value="0.00115745344893818" />
+      <inertia
+        ixx="3.97290092554314E-08"
+        ixy="1.65336506579406E-13"
+        ixz="-3.60412180475581E-11"
+        iyy="2.88827920072803E-08"
+        iyz="-2.52492241388452E-13"
+        izz="6.76913771029684E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://exomy_description/meshes/cam_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://exomy_description/meshes/cam_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="cam_joint"
+    type="fixed">
+    <origin
+      xyz="9.4215E-05 0.0021547 0.035"
+      rpy="0 0 1.5708" />
+    <parent
+      link="head_link" />
+    <child
+      link="cam_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="hat_link">
+    <inertial>
+      <origin
+        xyz="3.19558159043448E-08 0.0294025205083059 0.0152014899719377"
+        rpy="0 0 0" />
+      <mass
+        value="0.0446228233973554" />
+      <inertia
+        ixx="4.85170602784381E-05"
+        ixy="-7.36561851683775E-11"
+        ixz="-4.45696698624619E-11"
+        iyy="0.000137144944737089"
+        iyz="-1.51319761954045E-05"
+        izz="0.000157930625148711" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://exomy_description/meshes/hat_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.698039215686274 0.698039215686274 0.698039215686274 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://exomy_description/meshes/hat_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="hat_joint"
+    type="fixed">
+    <origin
+      xyz="0 -0.001 -0.001"
+      rpy="0 0 0" />
+    <parent
+      link="head_link" />
+    <child
+      link="hat_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="bling_link">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0" />
+      <inertia
+        ixx="0"
+        ixy="0"
+        ixz="0"
+        iyy="0"
+        iyz="0"
+        izz="0" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://exomy_description/meshes/bling_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://exomy_description/meshes/bling_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="bling_joint"
+    type="fixed">
+    <origin
+      xyz="0.08 0.0225 0"
+      rpy="1.5708 0 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="bling_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>
