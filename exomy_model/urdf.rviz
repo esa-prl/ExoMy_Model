@@ -6,6 +6,8 @@ Panels:
       Expanded:
         - /Global Options1
         - /Status1
+        - /RobotModel1
+        - /RobotModel1/Links1
         - /Axes1
         - /Axes2
         - /TF1
@@ -60,7 +62,7 @@ Visualization Manager:
       Collision Enabled: false
       Enabled: true
       Links:
-        All Links Enabled: true
+        All Links Enabled: false
         DRV_LF_link:
           Alpha: 1
           Show Axes: false
@@ -164,7 +166,7 @@ Visualization Manager:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         head_link:
           Alpha: 1
           Show Axes: false
@@ -321,16 +323,16 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 0.26959460973739624
+      Distance: 0.16210025548934937
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: -0.15586534142494202
-        Y: 0.07615707069635391
-        Z: -0.007864391431212425
+        X: -0.08667568117380142
+        Y: -0.0268348827958107
+        Z: 0.3039073348045349
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false

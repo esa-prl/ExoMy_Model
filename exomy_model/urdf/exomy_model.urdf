@@ -994,7 +994,7 @@
     name="pupil_left_link">
     <inertial>
       <origin
-        xyz="0 0.00044940185687814 0.000632252497896557"
+        xyz="0 -0.0045 0.000632252497896557"
         rpy="0 0 0" />
       <mass
         value="0.000901852963073431" />
@@ -1008,7 +1008,7 @@
     </inertial>
     <visual>
       <origin
-        xyz="0 0 0"
+        xyz="0 -0.0045 0"
         rpy="0 0 0" />
       <geometry>
         <mesh
@@ -1022,7 +1022,7 @@
     </visual>
     <collision>
       <origin
-        xyz="0 0 0"
+        xyz="0 -0.0045 0"
         rpy="0 0 0" />
       <geometry>
         <mesh
@@ -1031,11 +1031,11 @@
     </collision>
   </link>
   <joint
-    name="pupils_left_joint"
+    name="pupil_left_joint"
     type="continuous">
     <origin
-      xyz="0.10461 -0.0044591 0.002"
-      rpy="0 0 0.13494" />
+      xyz="0.104 0 0.002"
+      rpy="0 0 0" />
     <parent
       link="eyewhite_link" />
     <child
@@ -1047,7 +1047,7 @@
     name="pupil_right_link">
     <inertial>
       <origin
-        xyz="0 0.000449401856878195 0.000632252497896571"
+        xyz="0 -0.0045 0.000632252497896571"
         rpy="0 0 0" />
       <mass
         value="0.000901852963073431" />
@@ -1061,7 +1061,7 @@
     </inertial>
     <visual>
       <origin
-        xyz="0 0 0"
+        xyz="0 -0.0045 0"
         rpy="0 0 0" />
       <geometry>
         <mesh
@@ -1075,7 +1075,7 @@
     </visual>
     <collision>
       <origin
-        xyz="0 0 0"
+        xyz="0 -0.0045 0"
         rpy="0 0 0" />
       <geometry>
         <mesh
@@ -1087,8 +1087,8 @@
     name="pupil_right_joint"
     type="continuous">
     <origin
-      xyz="-0.00026502 -0.0044922 0.002"
-      rpy="0 0 -0.058928" />
+      xyz="0 0 0.002"
+      rpy="0 0 0" />
     <parent
       link="eyewhite_link" />
     <child
