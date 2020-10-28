@@ -86,7 +86,7 @@
   </link>
   <joint
     name="MRB_joint"
-    type="continuous">
+    type="revolute">
     <origin
       xyz="-0.082 0 0.017"
       rpy="1.5708 0 1.5708" />
@@ -97,8 +97,8 @@
     <axis
       xyz="0 0 1" />
     <limit
-      lower="-1"
-      upper="1"
+      lower="-0.47"
+      upper="0.47"
       effort="0"
       velocity="0" />
   </joint>
@@ -144,7 +144,7 @@
   </link>
   <joint
     name="STR_LR_joint"
-    type="continuous">
+    type="revolute">
     <origin
       xyz="0.10378 -0.015418 -0.080775"
       rpy="0 -1.5708 -1.5708" />
@@ -255,7 +255,7 @@
   </link>
   <joint
     name="STR_RR_joint"
-    type="continuous">
+    type="revolute">
     <origin
       xyz="-0.103779999964964 -0.0154182000000004 -0.0807754997113281"
       rpy="0 -1.5708 -1.5708" />
@@ -266,8 +266,8 @@
     <axis
       xyz="0 0 1" />
     <limit
-      lower="0"
-      upper="0"
+      lower="-1.57"
+      upper="1.57"
       effort="0"
       velocity="0" />
   </joint>
@@ -366,7 +366,7 @@
   </link>
   <joint
     name="RFB_joint"
-    type="continuous">
+    type="revolute">
     <origin
       xyz="0.055 -0.0619999999999967 0.017"
       rpy="-1.5707963267949 0 0" />
@@ -377,10 +377,10 @@
     <axis
       xyz="0 0 1" />
     <limit
-      lower="0"
-      upper="0"
+      lower="-0.47"
+      upper="0.47"
       effort="0"
-      velocity="0" />
+      velocity="0" />f
   </joint>
   <link
     name="STR_RF_link">
@@ -424,7 +424,7 @@
   </link>
   <joint
     name="STR_RF_joint"
-    type="continuous">
+    type="revolute">
     <origin
       xyz="0.0802349319288146 0.0141448430183208 -0.0417754997113241"
       rpy="1.5707963267949 0 -0.015893290716378" />
@@ -435,8 +435,8 @@
     <axis
       xyz="0 0 1" />
     <limit
-      lower="0"
-      upper="0"
+      lower="-1.57"
+      upper="1.57"
       effort="0"
       velocity="0" />
   </joint>
@@ -535,7 +535,7 @@
   </link>
   <joint
     name="STR_RM_joint"
-    type="continuous">
+    type="revolute">
     <origin
       xyz="-0.0797448607263364 0.0166876624779333 -0.0417754996999998"
       rpy="1.5707963267949 0 -0.0158932907163782" />
@@ -545,6 +545,11 @@
       link="STR_RM_link" />
     <axis
       xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="0"
+      velocity="0" />
   </joint>
   <link
     name="DRV_RM_link">
@@ -641,7 +646,7 @@
   </link>
   <joint
     name="LFB_joint"
-    type="continuous">
+    type="revolute">
     <origin
       xyz="0.055 0.0619999999999967 0.017"
       rpy="-1.5707963267949 0 0" />
@@ -651,6 +656,11 @@
       link="LFB_link" />
     <axis
       xyz="0 0 1" />
+    <limit
+      lower="-0.47"
+      upper="0.47"
+      effort="0"
+      velocity="0" />
   </joint>
   <link
     name="STR_LF_link">
@@ -694,7 +704,7 @@
   </link>
   <joint
     name="STR_LF_joint"
-    type="continuous">
+    type="revolute">
     <origin
       xyz="0.0800000000000001 0.0154182000000003 0.041775499700002"
       rpy="1.5707963267949 0 0" />
@@ -704,6 +714,11 @@
       link="STR_LF_link" />
     <axis
       xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="0"
+      velocity="0" />
   </joint>
   <link
     name="DRV_LF_link">
@@ -800,7 +815,7 @@
   </link>
   <joint
     name="STR_LM_joint"
-    type="continuous">
+    type="revolute">
     <origin
       xyz="-0.0799999999649664 0.0154182000000003 0.0417754997113218"
       rpy="1.5707963267949 0 0" />
@@ -810,6 +825,11 @@
       link="STR_LM_link" />
     <axis
       xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="0"
+      velocity="0" />
   </joint>
   <link
     name="DRV_LM_link">
