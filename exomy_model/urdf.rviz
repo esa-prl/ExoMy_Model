@@ -8,6 +8,7 @@ Panels:
         - /Status1
         - /Axes1
         - /Axes2
+        - /TF1
       Splitter Ratio: 0.5
     Tree Height: 725
   - Class: rviz/Selection
@@ -193,11 +194,104 @@ Visualization Manager:
       Reference Frame: MRB_link
       Value: true
     - Class: rviz/Axes
-      Enabled: true
+      Enabled: false
       Length: 0.10000000149011612
       Name: Axes
       Radius: 0.009999999776482582
       Reference Frame: STR_RR_link
+      Value: false
+    - Class: rviz/TF
+      Enabled: true
+      Frame Timeout: 15
+      Frames:
+        All Enabled: true
+        DRV_LF_link:
+          Value: true
+        DRV_LM_link:
+          Value: true
+        DRV_LR_link:
+          Value: true
+        DRV_RF_link:
+          Value: true
+        DRV_RM_link:
+          Value: true
+        DRV_RR_link:
+          Value: true
+        LFB_link:
+          Value: true
+        MRB_link:
+          Value: true
+        RFB_link:
+          Value: true
+        STR_LF_link:
+          Value: true
+        STR_LM_link:
+          Value: true
+        STR_LR_link:
+          Value: true
+        STR_RF_link:
+          Value: true
+        STR_RM_link:
+          Value: true
+        STR_RR_link:
+          Value: true
+        base_link:
+          Value: true
+        bling_link:
+          Value: true
+        cam_link:
+          Value: true
+        eyewhite_link:
+          Value: true
+        hat_link:
+          Value: true
+        head_link:
+          Value: true
+        pupil_left_link:
+          Value: true
+        pupil_right_link:
+          Value: true
+      Marker Scale: 0.15000000596046448
+      Name: TF
+      Show Arrows: true
+      Show Axes: true
+      Show Names: true
+      Tree:
+        base_link:
+          LFB_link:
+            STR_LF_link:
+              DRV_LF_link:
+                {}
+            STR_LM_link:
+              DRV_LM_link:
+                {}
+          MRB_link:
+            STR_LR_link:
+              DRV_LR_link:
+                {}
+            STR_RR_link:
+              DRV_RR_link:
+                {}
+          RFB_link:
+            STR_RF_link:
+              DRV_RF_link:
+                {}
+            STR_RM_link:
+              DRV_RM_link:
+                {}
+          bling_link:
+            {}
+          head_link:
+            cam_link:
+              {}
+            eyewhite_link:
+              pupil_left_link:
+                {}
+              pupil_right_link:
+                {}
+            hat_link:
+              {}
+      Update Interval: 0
       Value: true
   Enabled: true
   Global Options:
@@ -227,25 +321,25 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 0.7402076125144958
+      Distance: 0.26959460973739624
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: -0.15716500580310822
-        Y: -0.07404530048370361
-        Z: 0.036064114421606064
+        X: -0.15586534142494202
+        Y: 0.07615707069635391
+        Z: -0.007864391431212425
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.5503975749015808
+      Pitch: 0.33020272850990295
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 6.278588771820068
+      Yaw: 2.6954030990600586
     Saved: ~
 Window Geometry:
   Displays:
