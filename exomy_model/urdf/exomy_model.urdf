@@ -1095,6 +1095,8 @@
       link="pupil_right_link" />
     <axis
       xyz="0 0 1" />
+    <mimic
+      joint="pupil_left_joint"/>
   </joint>
   <link
     name="cam_link">
