@@ -1032,7 +1032,7 @@
   </link>
   <joint
     name="pupils_left_joint"
-    type="fixed">
+    type="continuous">
     <origin
       xyz="0.10461 -0.0044591 0.002"
       rpy="0 0 0.13494" />
@@ -1041,7 +1041,7 @@
     <child
       link="pupil_left_link" />
     <axis
-      xyz="0 0 0" />
+      xyz="0 0 1" />
   </joint>
   <link
     name="pupil_right_link">
@@ -1085,7 +1085,7 @@
   </link>
   <joint
     name="pupil_right_joint"
-    type="fixed">
+    type="continuous">
     <origin
       xyz="-0.00026502 -0.0044922 0.002"
       rpy="0 0 -0.058928" />
@@ -1094,7 +1094,7 @@
     <child
       link="pupil_right_link" />
     <axis
-      xyz="0 0 0" />
+      xyz="0 0 1" />
   </joint>
   <link
     name="cam_link">
