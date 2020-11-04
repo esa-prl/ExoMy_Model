@@ -1,7 +1,7 @@
 # ExoMy - Model Repository
 *Disclaimer: This model and the simulation are still in development and subject to change. If you want to contribute to the project, contact us with your plans [Discord](https://discord.gg/gZk62gg).*
 
-This repository contains an urdf model describing Exomy. The [wiki](https://github.com/esa-prl/ExoMy/wiki) explains you how to use it.
+This repository contains an urdf model describing Exomy.
 
 ![ExoMy image](https://github.com/esa-prl/ExoMy/wiki/images/renderings/2020_02_25.JPG)
 
