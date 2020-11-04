@@ -6,7 +6,7 @@ This repository contains an urdf model describing Exomy.
 ![ExoMy image](https://github.com/esa-prl/ExoMy/wiki/images/renderings/2020_02_25.JPG)
 
 ## How to run
-0. Clone this repository `git clone https://github.com/esa-prl/ExoMy_Model`
+0. Clone this repository `git clone https://github.com/esa-prl/ExoMy_Model ~/ExoMy_Model`
 1. Checkout the branch `feature/urdf` from ExoMy_Software.
 2. I had to run `xhost +SI:localuser:root` to get the GUI working.
 3. Start the docker container with `sh run_exomy.sh -d`
