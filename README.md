@@ -1,18 +1,25 @@
 # ExoMy - Model Repository
 *Disclaimer: This model and the simulation are still in development and subject to change. If you want to contribute to the project, contact us with your plans [Discord](https://discord.gg/gZk62gg).*
 
-This repository contains an urdf model describing Exomy.
+This repository contains a URDF representation of ExoMy, that can be used in the visualization tool rviz2 and the simulation environment Gazebo.
 
-![Urdf image](https://user-images.githubusercontent.com/10925797/98133643-20edb180-1ebe-11eb-897a-2b605b97495e.png)
+![rviz image](rviz.png)
+![gazebo image](gazebo.png)
 
+
+The software is supposed to run on a more powerful machine than the Raspberry Pi.
+It was tested on a laptop with Ubuntu 20.04. 
 ## How to run
-0. Clone this repository `git clone https://github.com/esa-prl/ExoMy_Model ~/ExoMy_Model`
-1. Checkout the branch `feature/urdf` from ExoMy_Software.
-2. I had to run `xhost +SI:localuser:root` to get the GUI working.
-3. Start the docker container with `sh run_exomy.sh -d`
-4. Inside the docker run: `source devel/setup.sh`
-5. Run: `roslaunch exomy_model display.launch gui:=True`
-6. Control the joints with the gui.
+ 
+- Clone this repository `git clone https://github.com/esa-prl/ExoMy_Model` next to the `ExoMy_Software` folder
+- Be sure to be on the branch `ros2/foxy` on both repositories
+- To allow programs being opened from within the docker container run `xhost +local:docker`
+- Change to the folder `ExoMy_Model/docker`
+- Start the Docker container with `docker-compose run --name exomy_sim exomy_sim`
+- Inside the docker run `colcon build`
+- Followed by `source install/setup.zsh`
+- Launch the simulation with `ros2 launch exomy_sim_launch simulation.launch.py`
+- Rviz2 and gazebo should open and you can drive around with the gamepad
 
 
 # ExoMy Links
