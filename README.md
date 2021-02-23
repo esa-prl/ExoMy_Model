@@ -21,6 +21,14 @@ It was tested on a laptop with Ubuntu 20.04.
 - Launch the simulation with `ros2 launch exomy_sim_launch simulation.launch.py`
 - Rviz2 and gazebo should open and you can drive around with the gamepad
 
+- If you wanna use the web GUI you have to start another terminal in the container
+- You can do that from the host with `docker exec -it exomy_sim zsh`
+- Change to the directory `exomy_ws/src/exomy/gui`
+- The commands to start the http-server and ros webbridge were put in a script
+- Start the script with `sh run_gui.sh`
+- It should show you an ip address that you can click on or copy into your browser
+- The Web GUI should show up and you can use it to drive around
+
 
 # ExoMy Links
 
