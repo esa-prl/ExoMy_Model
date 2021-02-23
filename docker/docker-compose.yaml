@@ -17,6 +17,10 @@ services:
               target: /dev
             - /tmp/.X11-unix:/tmp/.X11-unix:rw
         network_mode: "host"
+        ports:
+            - "8000:8000"
+            - "9000:9000"
+            - "8080:8080"
         environment:
             - DISPLAY
             - QT_X11_NO_MITSHM=1
