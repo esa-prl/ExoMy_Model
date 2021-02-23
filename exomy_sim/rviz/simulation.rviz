@@ -185,20 +185,6 @@ Visualization Manager:
       Update Interval: 0
       Value: true
       Visual Enabled: true
-    - Class: rviz_default_plugins/Axes
-      Enabled: false
-      Length: 0.10000000149011612
-      Name: Axes
-      Radius: 0.009999999776482582
-      Reference Frame: MRB_link
-      Value: false
-    - Class: rviz_default_plugins/Axes
-      Enabled: false
-      Length: 0.10000000149011612
-      Name: Axes
-      Radius: 0.009999999776482582
-      Reference Frame: STR_RR_link
-      Value: false
     - Class: rviz_default_plugins/TF
       Enabled: true
       Frame Timeout: 15
