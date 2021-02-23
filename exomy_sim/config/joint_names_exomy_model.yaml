@@ -1,0 +1,1 @@
+controller_joint_names: ['', 'MRB_joint', 'STR_LR_joint', 'DRV_LR_joint', 'STR_RR_joint', 'DRV_RR_joint', 'RFB_joint', 'STR_RF_joint', 'DRV_RF_joint', 'STR_RM_joint', 'DRV_RM_joint', 'LFB_joint', 'STR_LF_joint', 'DRV_LF_joint', 'STR_LM_joint', 'DRV_LM_joint', 'pupil_left_joint', 'pupil_right_joint',]

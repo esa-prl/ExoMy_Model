@@ -1,0 +1,22 @@
+version: "3.8"
+
+services:
+    exomy_sim:
+        build: .
+        privileged: true
+        container_name: exomy_sim
+        volumes:
+            - ../../ExoMy_Software/exomy:/home/exomy/exomy_ws/src/exomy
+            - ../../ExoMy_Software/exomy_msgs:/home/exomy/exomy_ws/src/exomy_msgs
+            - ../exomy_sim:/home/exomy/exomy_ws/src/exomy_sim
+            - ../exomy_sim_msgs:/home/exomy/exomy_ws/src/exomy_sim_msgs
+            - ../exomy_sim_launch:/home/exomy/exomy_ws/src/exomy_sim_launch
+            - ../rover_gazebo_plugins:/home/exomy/exomy_ws/src/rover_gazebo_plugins
+            - type: bind
+              source: /dev
+              target: /dev
+            - /tmp/.X11-unix:/tmp/.X11-unix:rw
+        network_mode: "host"
+        environment:
+            - DISPLAY
+            - QT_X11_NO_MITSHM=1

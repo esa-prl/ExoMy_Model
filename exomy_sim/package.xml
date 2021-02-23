@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>exomy_sim</name>
+  <version>2.0.0</version>
+  <description>Simulation tools for ExoMy</description>
+  <maintainer email="max.ehrhardt@hotmail.de">Maximilian Ehrhardt</maintainer>
+  <license>GPLv3</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>rclcpp</exec_depend>
+  <depend>gazebo</depend>
+  <depend>exomy_msgs</depend>
+  <depend>exomy_sim_msgs</depend>
+  
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
