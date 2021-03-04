@@ -29,6 +29,12 @@ It was tested on a laptop with Ubuntu 20.04.
 - It should show you an ip address that you can click on or copy into your browser
 - The Web GUI should show up and you can use it to drive around
 
+# Known Problems
+When running on a slower system, e.g a Virtual Machine, the `spawn_entity.py` script could fail, due to a slow startup time of Gazebo.
+For this case the launch file `spawn_exomy.launch.py` is provided.
+To use it the line `spawn_rover` in the `return LaunchConfiguration()` needs to be commented out.
+Then the `simulation.launch.py` can be run.
+When Gazebo is launched properly the `spawn_exomy.launch.py` can be run.
 
 # ExoMy Links
 
