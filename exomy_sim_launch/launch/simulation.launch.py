@@ -38,8 +38,8 @@ def generate_launch_description():
     )
     gamepad = Node(
         package='exomy',
-        executable='gamepad_parser_node',
-        name='gamepad_parser_node',
+        executable='joystick_parser_node',
+        name='joystick_parser_node',
         output='screen'
     )
 
